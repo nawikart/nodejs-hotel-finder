@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IOTRAVELS: Read Reviews, Compare Prices &amp; Book the Best of Hotels in Bali Indonesia</title>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache,must-revalidate"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta name="keywords" content="discount hotel , online reservation , real time booking , Bali , real reviews of hotels in Bali , acommodation , accomodation , acomodation , accommodation"/>
+    
+    <meta name="description" content="Read real reviews, guaranteed best price. Special rates of hotels in Bali - Indonesia. Travel smarter with IOTRAVELS."/>
+
+    <script src="/cdn/react.development.js"></script>
+    <script src="/cdn/react-dom.development.js"></script>
+    <script src="/cdn/babel.min.js"></script>
+
+	<script type='text/javascript' src='/js/jquery.js'></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+
+    <link rel='stylesheet' href='/css/style.css?a036' type='text/css' />
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98829185-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	 -->
+</head>
+<body>
+
+<!-- <iframe src="https://www.agoda.com/partners/partnersearch.aspx?cid=1730363&pcs=1&hl=en&city=17193" id="agodaiframe" name="agodaiframe" width="1" height="1" style="position: absolute; z-index: -1;"></iframe> -->
+
+<div id="header" class="borderbottom">
+	<div id="logo"><a href="/">IOTRAVELS</a></div>
+	<div id="main-menu">
+		<ul>
+			<li><a href="/">home</a></li>
+			<li><a href="/cities-sitemap.html">cities</a></li>
+			<li><a href="/hotels-sitemap.html">sitemap</a></li>
+			<!-- <li><a href="#">hotels</a></li>
+			<li><a href="#">things to do</a></li>
+			<li><a href="#">restaurants</a></li> -->
+		</ul>
+	</div>
+</div>
+
+<div id="main">
+
+			<div id="posisi"><a href="/">Home</a> &raquo; <a href="/indonesia.htm">Indonesia</a> &raquo; <a href="/tourism-bali-id-vacations.html">Bali</a> &raquo; Hotel Deals of the Day</div>
+	
+			<h1 align="center">Find your ideal hotel at the <nowrap>lowest prices.</nowrap></h1>
+		<div class="content_tabs searchingform">
+
+			
+				<form id="formNearby" class="style3" autocomplete="off" method="get" action="index.php">
+				      <div><input id="autocomplete" name="autocomplete" placeholder="Where do you want to go..." onFocus="geolocate()" type="text"></input></div>
+					  <input type="hidden" name="q" value="nearby">
+					  <input type="hidden" name="lat" value="">
+					  <input type="hidden" name="lng" value="">				      
+			    </form>		
+		</div>
+	
+	
+		<div class="section listing1"><h2>Hotel Deals of the Day in Bali</nowrap></h2>
+			<div class="items">
+					{{#each output}}
+						<div class="item" id="hotel_{{hotel_id}}"> </div>
+
+						<style type="text/css">
+							.img_{{hotel_id}}{
+								background-image: url({{photo1}});
+							}
+						</style>
+
+					    <script type="text/babel"> 					    	 
+						      ReactDOM.render(
+								<a href="/{{hotel_namekey}}/hotel/{{citykey}}-{{countryisocode_lower}}.html">
+									<div class="item_inner">
+										<div class="img img_{{hotel_id}} cover"></div>
+											<div class="text">
+												<div class="title_wrapper">
+													<h3>{{hotel_name}}</h3>
+													<div class="location">area, {{city}}, {{countryisocode}}</div>								
+													<div class="star s5"></div>
+												</div>
+
+												<div class="rate_n_reviews_wrapper">
+													<div class="left"><span class="rates_from">USD 345</span><b>8.8</b> Excellent</div>
+													<div class="right"><b>98</b> reviews</div>
+												</div>
+											</div>
+									</div>
+								</a>,
+						        document.getElementById('hotel_{{hotel_id}}')
+						      );
+					    </script>
+					{{/each}}
+			</div>
+								
+                    <nav class="pagination">                                            
+                        <ul><li><a>PREV</a></li><li><a class="active" href="/bali-id-hotels.html">1</a></li><li><a href="/bali-id-hotels-page2.html">2</a></li><li><a href="/bali-id-hotels-page3.html">3</a></li><li><a href="/bali-id-hotels-page4.html">4</a></li><li><a href="/bali-id-hotels-page5.html">5</a></li><li><a href="/bali-id-hotels-page6.html">6</a></li><li><a>...</a></li><li><a href="/bali-id-hotels-page193.html">193</a></li><li><a href="/bali-id-hotels-page2.html">NEXT</a></li></ul>                    </nav>
+                		
+		</div></div>
+
+<div id="footer" class="middle">
+	<p>Copyright &copy 2017 IOTRAVELS. &nbsp; &nbsp; 
+
+	<nowrap><a href="/">Home</a> &nbsp; | &nbsp; <a href="/cities-sitemap.html">Cities</a> &nbsp; | &nbsp; <a href="/hotels-sitemap.html">Sitemap</a></nowrap></p>
+
+		<div id="mylinks" style="height: 1px;overflow: hidden; padding-top: 5px;">
+			<p><a href="http://iotravels.com">iotravels</a></p>
+			<p><a href="http://iobali.com">iobali</a></p>
+			<p><a href="http://balious.com">balious</a></p>
+			<p><a href="http://seoulatoz.com">seoulatoz</a></p>
+
+			<p><a href="http://hotel-discount-coupon.com">hotel-discount-coupon</a></p>
+			<p><a href="http://hoteldealsoftheday.com">hoteldealsoftheday</a></p>
+			<p><a href="http://thelowestpricehotels.com">thelowestpricehotels</a></p>
+			<p><a href="http://thebesthoteldiscount.com">thebesthoteldiscount</a></p>
+		</div>
+</div>
+
+<div id="map_overlay">	
+	<div class="close"></div>
+	<div id="map"></div>
+</div>
+
+<div class="simple_popup">
+	<div class="simple_popup_inner">
+			<div class="close">(x)</div>
+			<p>Please enter a valid address then select on one of the addresses that appear afterwards.</p>
+			<img src="images/autocomplete-sample.png" width="272" />
+	</div>
+</div>
+</body>
+</html>

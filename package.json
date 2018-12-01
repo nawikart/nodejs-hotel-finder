@@ -1,0 +1,46 @@
+{
+  "name": "cobot-bookings-service",
+  "version": "0.5.0",
+  "description": "Outpost x Cobot Booking Interface ",
+  "main": "server.js",
+  "scripts": {
+    "install": "npm install && npm install forever -g",
+    "start": "NODE_ENV=development nodemon server",
+    "start-staging": "NODE_ENV=staging forever start --minUptime 10000000000000000000000000000000000000000000000000 --spinSleepTime 1000 server.js",
+    "start-prod": "NODE_ENV=production forever start --minUptime 10000000000000000000000000000000000000000000000000 --spinSleepTime 1000 server.js",
+    "ssh-staging": "ssh",
+    "ssh-prod": "ssh",
+    "kill-all": "forever stopall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Outpost-Asia/cobot-bookings-service.git"
+  },
+  "author": "PurpleBracket",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Outpost-Asia/cobot-bookings-service/issues"
+  },
+  "homepage": "https://github.com/Outpost-Asia/cobot-bookings-service#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.16.0",
+    "babel-preset-es2015": "^6.1.18",
+    "body-parser": "^1.17.1",
+    "cheerio": "^1.0.0-rc.2",
+    "config": "^1.26.2",
+    "cors": "^2.8.3",
+    "curl": "^0.1.4",
+    "express": "^4.15.2",
+    "forever": "https://registry.npmjs.org/forever/-/forever-0.15.3.tgz",
+    "fs": "^0.0.1-security",
+    "hbs": "^4.0.1",
+    "jsonschema": "^1.2.0",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.10.8",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "6.10.3"
+  }
+}
