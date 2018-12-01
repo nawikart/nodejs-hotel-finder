@@ -1,4 +1,1 @@
-## micro-service boilerplate
-
-###### api is at /api/v1/
-
+![alt text](https://github.com/nawikart/README_IMAGES/blob/master/nodejs-hotel-finder/nodejs-hotel-finder.png)
